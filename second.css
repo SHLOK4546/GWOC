@@ -1,0 +1,14 @@
+*{
+    box-sizing: content-box;
+}
+.background{
+    background-color:bisque;
+    padding:20px;
+    border:20px;
+}
+header{
+    text-align: center;
+    font-weight:bold;
+    
+}
+input[type]

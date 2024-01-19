@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarang Sir - Educator</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgba(255, 255, 255, 0.934);
+            color: #333;
+        }
+
+        .bubbles {
+            position: absolute;
+            top: 0;
+            Left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -5;
+        }
+
+        .bubbles li {
+            position: absolute;
+            list-style: none;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: rgb(243, 219, 116);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .bubbles li:nth-child(1) {
+            Left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .bubbles li:nth-child(2) {
+
+            Left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+
+        }
+
+        .bubbles li:nth-child(3) {
+            Left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .bubbles li:nth-child(4) {
+            Left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .bubbles li:nth-child(5) {
+            Left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .bubbles li:nth-child(6) {
+            Left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .bubbles li:nth-child(7) {
+            Left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .bubbles li:nth-child(8) {
+            Left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .bubbles li:nth-child(9) {
+            Left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .bubbles li:nth-child(10) {
+            Left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100% {
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%
+            }
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .logo {
+            margin-top: 0;
+            padding: 6px;
+            justify-self: flex-start;
+            margin-left: 60px;
+
+
+        }
+
+        div .logo{
+            display: inline;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 90px;
+            font-weight: 700;
+            margin-bottom: 1px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .motiontext {
+            text-align: center;
+            font-size: 70px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .movingtext {
+            padding: 40px;
+        }
+
+        span::before {
+            content: "mentor.";
+            animation: animatetext infinite 15s, appear infinite 3s;
+            padding-left: 10px;
+        }
+
+        @keyframes animatetext {
+
+            0% {
+                content: "mentor.";
+                opacity: 1;
+            }
+
+            6% {
+                opacity: 0;
+            }
+
+            20% {
+                content: "tutor.";
+                opacity: 1;
+            }
+
+            26% {
+                opacity: 0;
+            }
+
+            40% {
+                content: "sidekick.";
+                opacity: 1;
+            }
+
+            46% {
+                opacity: 0;
+            }
+
+            60% {
+                content: "cheerleader.";
+                opacity: 1;
+            }
+
+            66% {
+                opacity: 0;
+            }
+
+            80% {
+                content: "believer.";
+                opacity: 1;
+            }
+
+            86% {
+                opacity: 0;
+            }
+
+            100% {
+                content: "supporter.";
+                opacity: 1;
+            }
+        }
+
+        header div img {
+            width: 40%;
+        }
+
+        nav {
+            background-color: #495057;
+            color: #fff;
+            padding: 1em;
+            justify-self: flex-end;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            width: 60%;
+            max-width: 800px;
+
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .titlepic {
+            width: 100%;
+            height: 500px;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        #title2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title2 {
+            width: 40%;
+        }
+
+        #reviews {
+            display: flex;
+            justify-content: space-between;
+            height: 10%;
+        }
+
+        #About {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 40px;
+        }
+
+        #Achievements {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 40px;
+            padding-top: 0px;
+            align-items: center;
+        }
+
+        #achievetext,
+        #skillhead {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        #Skills {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 40px;
+            padding-top: 0px;
+            align-items: center;
+        }
+
+        .skillpic {
+            width: 90%;
+            height: 350px;
+            padding-left: 30px;
+        }
+
+        #skillhead {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            text-align: right;
+            padding-right: 125px;
+        }
+
+
+        .testimonials {
+            padding: 40px 0;
+            background: #f1f1f1;
+            color: #434343;
+            text-align: center;
+        }
+
+        .inner {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        .border {
+            width: 160px;
+            height: 5px;
+            background: #6ab04c;
+            margin: 26px auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col {
+            flex: 33.33%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        .testimonial {
+            background: #fff;
+            padding: 30px;
+        }
+
+        .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        .stars {
+            color: #6ab04c;
+            margin-bottom: 20px;
+        }
+
+
+        @media screen and (max-width:960px) {
+            .col {
+                flex: 100%;
+                max-width: 80%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .col {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .feedbox {
+            margin-top: 0px;
+            width: 100%;
+            display: flex;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("/img and vid/gwoc/b4.jpg");
+            background-size: cover;
+            padding: 50px 360px;
+            background-attachment: fixed;
+        }
+
+        .feed {
+            width: 800px;
+            height: 400px;
+            position: relative;
+            border-radius: 10px;
+            justify-content: center;
+            box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.6), 0 0 80px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .feed form {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .feed form label {
+            position: absolute;
+            color: #f2f2f2;
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .feed form .fname {
+            width: 25%;
+        }
+
+        .feed form input,
+        .feed textarea {
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px lightgray;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            outline: none;
+            color: #2E3D49;
+            background: #fff9;
+            font-weight: 600;
+        }
+
+        input[type="email" i] {
+            writing-mode: horizontal-tb !important;
+            padding-block: 1px;
+            padding-inline: 2px;
+        }
+
+        .feed form textarea {
+            width: 90%;
+            height: 100px;
+        }
+
+        textarea {
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: inset 0 0 5px lightgray;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            outline: none;
+            color: #2E3D49;
+            background: #fff9;
+            font-weight: 600;
+        }
+
+        .feed #csubmit {
+            margin-top: 25px;
+            background: linear-gradient(to right, #FA4B37, #DF2771);
+            border-radius: 5px;
+            border-style: none;
+            outline: none;
+            width: 90%;
+            padding: 15px 25px;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        button {
+            float: left;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: #2E3D49;
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        footer {
+            color: #E5E8EF;
+            background: rgba(0, 0, 0, 0.890);
+            padding: 9px 0;
+        }
+
+        footer .footer-container {
+            max-width: 1300px;
+            margin: auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+        }
+
+        footer .social-media img {
+            width: 22px;
+        }
+
+        footer .logo {
+            width: 180px;
+            color: #fff;
+        }
+
+        footer .right-col h1 {
+            font-size: 26px;
+        }
+
+        footer .border {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #FA4B37, #DF2771);
+            margin: 2px;
+        }
+
+        footer .newsletter-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        footer input::placeholder {
+            color: white !important;
+        }
+
+        footer .txtb {
+            flex: 1;
+            padding: 18px 40px;
+            font-size: 16px;
+            background: #343A40;
+            border: none;
+            font-weight: 700;
+            outline: none;
+            border-radius: 5px;
+            min-width: 260px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        footer .btn {
+            margin-top: 20px;
+            padding: 18px 40px;
+            font-size: 16px;
+            color: #f1f1f1;
+            background: linear-gradient(to right, #FA4B37, #DF2771);
+            border: none;
+            font-weight: 700;
+            outline: none;
+            border-radius: 5px;
+            margin-left: 20px;
+            cursor: pointer;
+            transition: opacity .3s linear;
+        }
+
+        footer .btn:hover {
+            opacity: .7;
+        }
+
+        @media screen and (max-width: 960px) {
+            .footer-container {
+                max-width: 600px;
+            }
+
+            .right-col {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+
+            .left-col {
+                width: 100%;
+                text-align: center;
+            }
+
+            .social-media {
+                display: flex;
+                justify-content: center;
+            }
+
+            .logo {
+                transition: 1s;
+                margin-left: 30%;
+            }
+
+            nav ul,
+            .srch,
+            .get-started {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            nav {
+                padding-bottom: 20px;
+                border-bottom: 1px solid #0005;
+                /* position: fixed; */
+                /* top: 0; */
+            }
+
+            .quote p,
+            .quote h5,
+            .play {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .quote p {
+                font-size: 30px;
+            }
+
+            .service-container .right-side img {
+                width: 90%;
+            }
+
+            .title {
+                margin-top: 0px;
+            }
+
+        }
+
+        @media screen and (max-width: 700px) {
+            footer .btn {
+                margin: 0;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .svg-image img {
+                width: 90%;
+                margin: 20px;
+                /* align-self: center; */
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+
+            .feedbox form input,
+            .feedbox form .fname {
+                width: 100%;
+            }
+        }
+
+        .footer_last {
+            display: flex;
+        }
+
+        .insta_img {
+            margin: 10px;
+        }
+
+        .Firstt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #495057;
+            /* padding: 1em; */
+            color: #fff;
+        }
+
+        .logo {
+            width: 380px; 
+            height: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="Firstt">
+        <div class="logo">
+            <img src="/img and vid/gwoc/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Achievements">Achievements</a>
+            <a href="#Demo">Demo</a>
+            <a href="#Testimonials">Testimonials</a>
+        </div>
+    </header>
+    <ul class="bubbles">
+        <li></li>
+        <li>
+            </11>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+            </11>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="movingtext">
+        <h1>Every student needs a </h1>
+        <h2 class="motiontext"><span> </span></h2>
+    </div>
+    <div>
+        <img class="titlepic" src="img_2222.jpg">
+    </div>
+    <div>
+        <section id="reviews">
+            <div>
+                <h1 class="review1">0M+</h1>
+                <h3 class="review2">Live sessions and Writing Lab submissions</h3>
+            </div>
+            <div>
+                <h1 class="review1">00K+</h1>
+                <h3 class="review2">Hours of live, one-on-one connection</h3>
+            </div>
+            <div>
+                <h1 class="review1">0/5</h1>
+                <h3 class="review2">Average rating students give their tutors</h3>
+            </div>
+
+        </section>
+
+        <section id="title2">
+            <h2 class="title2t">Unlock Your Potential with Expert Guidance:<br> Where Learning Knows<br>No Bounds</h2>
+            <img class="title2" src="img_33.png">
+        </section>
+
+        <section id="About">
+            <div>
+                <h2>About</h2>
+                <p>I am currently pursuing an Integrated MSc in Mathematics at SVNIT Surat, a journey that commenced in
+                    2020 and continues to the present.Along with my own acaedemic journey I have been aiding to those in
+                    their JEE journey as well over the years. A solid academic foundation has also fostered a passion
+                    for physics and a commitment to intellectual growth.</p>
+            </div>
+            <div>
+                <h2>How we work</h2>
+                <p>As a tutor, my philosophy centers on personalized guidance, fostering a deep understanding, and
+                    igniting a passion for learning. I believe in adapting to each student's unique learning style,
+                    cultivating critical thinking along with the lessons I've learnt through all the inevitable ups and
+                    downs of my own JEE journey helping them instilling confidence to empower them beyond academics.</p>
+            </div>
+        </section>
+        <section id="skillhead">
+            <h2 id="skillhead">Skills</h2>
+        </section>
+        <section id="Skills">
+            <div>
+                <img src="img_4.svg" class="skillpic">
+            </div>
+            <ul>
+                <li>In depth teaching with tried and tested pedogogical approach.</li>
+                <li>Regular Doubt solving and rellevent practice questions.</li>
+            </ul>
+        </section>
+        <section id="achievetext">
+            <h2 id="achievetext">Achiements</h2>
+        </section>
+        <section id="Achievements">
+            <div>
+                <p>
+                <h3>Is your tutor dependable?
+                    Following are my Academic Achievments<br> over the years giving you enough data to answer this
+                    yourself.</h3>
+                </p>
+            </div>
+            <div>
+                <ul>
+                    <li>Secured AIR 6808 in JEE Advanced 2020</li>
+                    <li> Selected for IISER Behrampur.</li>
+                    <li>Selected for NISER and UM-DAE with an AIR 186 in NEST 2020.</li>
+                    <li>Cleared IIM Indore IPMAT 2020</li>
+                    <li>Cleared NTSE stage 1 in 2016.</li>
+                    <li>Got High Distinction in Australian Chemistry Quiz 2015.</li>
+                    <li>Level 1 Certified Fitness Trainer and Nutrition Specialist.</li>
+                    <li>Gold medal in Gujrat State Powerlifting Championship 2022.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <div class="testimonials">
+        <div class="inner">
+            <h1>Testimonials</h1>
+            <div class="border"></div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial" id="testimonial1">
+                        <img src="/img and vid/gwoc/p1.png" alt="">
+                        <div class="name">Full name</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="/img and vid/gwoc/p2.png" alt="">
+                        <div class="name">Full name</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="testimonial">
+                        <img src="/img and vid/gwoc/p3.png" alt="">
+                        <div class="name">Full name</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s,
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedbox">
+        <div class="feed">
+            <form action="mailto:tarangbombale01@gmail.com" method="post" enctype="text/plain">
+                <label>Your Name</label><br>
+                <input type="text" id="fname" required="required"><br>
+                <label>Email</label><br>
+                <input type="email" name="mail" required="required" class="fmail"><br>
+                <label>Your Opinion</label><br>
+                <textarea name="addtional" id="ftext"></textarea><br>
+                <button type="submit" id="csubmit" class="fbutton" onclick="addfeedback(this)">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer_last">
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="img_2.jpg" style="width: 170px;">
+                <p class="social-media"><img src="insta_png.png" class="insta_img">Instagram</p>
+                <p><img src="location_png.png"> Bhabha Bhavan<br>Svnit, Surat-395007</p>
+                <!-- <br> -->
+                <p><img src="phone_png.png"> +91-766663804
+                    <br><img src="mail_png.png">&nbsp;
+                    tarangbombale01@gmail.com
+                </p>
+                <!-- <br> -->
+                <p class="rights-text">
+                <h6>Copyright © 2023 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</h6>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function addfeedback() {
+            const input = document.getElementById("fname");
+            const inputValue = input.value;
+            let newText = document.getElementById("ftext").value;
+
+            let given = document.getElementById("testimonial1");
+            let givenName = given.children[1].textContent;
+            let givenMail = given.children[3].textContent;
+
+            let newFeedback = document.createElement("div");
+            newFeedback.className = "testimonial";
+            newFeedback.innerHTML = `<div class="testimonial">
+  <img src="/img and vid/gwoc/IMG-20230202-WA0005.jpg" alt="">
+  <div class="name">${inputValue}</div>
+  <div class="stars">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+  </div>
+<p>
+    ${newText}
+  </p>
+</div>`
+            given.replaceWith(newFeedback);
+        }
+    </script>
+</body>
+
+</html>

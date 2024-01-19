@@ -1,0 +1,66 @@
+*{
+    
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0px;
+    background-color: rgb(6, 6, 134);
+}
+h1{
+    text-align: center;
+    background-color: blanchedalmond;
+    font-size: 50px;
+    margin: 0px;
+}
+nav{
+    background-color: rgb(2, 2, 46);
+    height: 30px;
+    margin: 0px;
+    text-align: center;
+    word-spacing: 30px;
+}
+nav a{
+    color: blanchedalmond;
+    font-size: 25px;
+    text-decoration: none;
+    
+}
+h2{
+    text-align: center;
+    background-color:rgb(19, 233, 236) ;
+
+}
+h3{
+    text-align: center;
+    color:azure;
+    font-weight: 800;
+}
+img{
+    width:23%;
+    border: 2px solid rgb(19, 233, 236);
+    margin: 9px;
+    height: 180px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition:width 1s,height 1s,z-index 1s;
+}
+img:hover{
+    width:50%;
+    height: 360px;
+    z-index: 3;
+
+}
+.carousel-cell {
+    width: 28%;
+    height: 500px;
+    margin-right: 10px;
+    background: #8C8;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+  
+  /* cell number */
+  
+  
+

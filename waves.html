@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapters</title>
+    <link rel="stylesheet" href="gwocstyle.css">
+    <link href ='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+    <header class="Firstt">
+        <div class="logo">
+            <img src="/img and vid/gwoc/logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Achievements">Achievements</a>
+            <a href="#Demo">Demo</a>
+            <a href="#Testimonials">Testimonials</a>
+        </div>
+    </header>
+    </header>
+    <ul class="bubbles">
+        <li></li>
+        <li></11>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></11>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+        <div class="subject">
+        <div class="chapter">
+            <h2 class="chaptername">Waves</h2>
+            <div class="chvideos" id="kin">
+       </div>
+    </div>
+</div>
+<script>
+   fetch("https://script.google.com/macros/s/AKfycbwMF43ThejpvZoYCjKlx2gFU2hlPNVERoxsbSauAJvsGmfB1-9v5bKMtGpE5pgKcLcI7A/exec?chapter=waves")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Assuming the response is in JSON format
+                const jsonData = JSON.parse(data);
+
+                // Iterate over the array and log each object's properties
+                jsonData.data.forEach(obj => {
+                    console.log('lecno:', obj.lecno);
+                    console.log('vidurl:', obj.vidurl);
+                    console.log('noturl:', obj.noturl);
+
+                    let chapterheading=document.getElementById("kin");
+
+                    let newlec=document.createElement('div');
+                    newlec.className="dcardch";
+                    newlec.innerHTML=` <div class="fpartch"><img src="/img and vid/gwoc/curr.jpg"></div>
+                    <div class="spartch">Lecture-${obj.lecno}</div>
+                    <a href="${obj.vidurl}"><i class='bx bxs-video'></i></a>
+                    <a href="${obj.noturl}"><i class='bx bxs-file-pdf' ></i></a>`;
+                    
+                    chapterheading.appendChild(newlec);
+
+                });
+                
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            }); 
+           
+        
+</script>
+</body>
+</html>

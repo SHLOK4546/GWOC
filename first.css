@@ -1,0 +1,21 @@
+h1{
+    color:blue;
+    text-align: center;
+    font-size: 50px ;
+}
+header{
+    background-color: blanchedalmond;
+}
+<!__.background{
+    background-image: url(images3.jpg);
+    background-repeat: no-repeat;
+    background-size: 1000px;>
+    
+}
+.background{
+    background-color: aqua;
+}
+h3 div{
+    text-align:right ;
+    color:brown;
+}

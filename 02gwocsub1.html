@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub1</title>
+    <link rel="stylesheet" href="gwocstyle.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        :root {
+	--cards: 4;
+	--cardHeight: 87vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+    color: azure;
+}
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 2;
+}
+#card3 {
+	--index: 3;
+}
+#card4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+	top: 0;
+	padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#card1 .card-body {
+	background-image: url("./img and vid/gwoc/WhatsApp\ Image\ 2024-01-09\ at\ 18.44.20.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#card2 .card-body {
+	background-image: url("./img and vid/gwoc/elecfi.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#card3 .card-body {
+	background-image: url("./img and vid/gwoc/therm.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#card4 .card-body {
+	background-image: url("./img and vid/gwoc/atom1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.card-body {
+	box-sizing: border-box;
+	padding: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+	height: var(--cardHeight);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+    margin: -6px;
+    padding: 9px;
+    font-size: 20px;
+}
+.secheading{
+    color: azure;
+    font-family:'Times New Roman', Times, serif;
+}
+.chaptertopic{
+    color: azure;
+}
+.bubbles li{
+    background-color: azure;
+}
+    </style>
+</head>
+<body>
+    <header class="Firstt">
+        <div class="logo">
+            <img src="./img and vid/gwoc/logo.png" class="pagar" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="01gwoc.html">About</a>
+            <a href="01gwoc.html">Skills</a>
+            <a href="01gwoc.html">Achievements</a>
+            <a href="#Demo">Demo</a>
+            <a href="01gwoc.html">Testimonials</a>
+        </div>
+    </header>
+    <ul class="bubbles">
+        <li></li>
+        <li></11>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></11>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        </ul>
+        <div class="container">
+            <ul id="cards">
+                <li class="card" id="card1">
+                    <div class="card-body">
+                        <h2 class="secheading">MECHANICS</h2>
+        <ol class="chapterhead" type="1">
+        <li><a class="chaptertopic" href="unit.html"><h3 >Unit and Dimension</h3></a></li>
+        <li><a class="chaptertopic" href="gwocchap.html"><h3>Kinematics</h3></a></li>
+        <li><a class="chaptertopic" href="rot.html"><h3>Rotational Mechanics</h3></a></li>
+        <li><a class="chaptertopic" href="friction.html"><h3>Newton Laws of Motion and Friction</h3></a></li>
+        <li><a class="chaptertopic" href="circular.html"><h3>Circular Motion</h3></a></li>    
+        <li><a class="chaptertopic" href="wpe.html"><h3>Work,Power and Energy</h3></a></li>
+        <li><a class="chaptertopic" href="com.html"><h3>Center of Mass and Collision</h3></a></li>  
+        
+        <li><a class="chaptertopic" href="shm.html"><h3>Simple Hramonic Motion</h3></a></li>
+        <li><a class="chaptertopic" href="fluids.html"><h3>Fluids</h3></a></li>
+        <li><a class="chaptertopic" href="gravitation.html"><h3>Gravitation</h3></a></li>  
+        </ol>
+    
+                    </div>
+                </li>
+                <li class="card" id="card2">
+                    <div class="card-body">
+                        <h2 class="secheading">Elecricity and Magnetism</h2>
+        <ol class="chapterhead" type="1">
+            <li><a class="chaptertopic" href="elec.html"><h3>Electric Field and Potentiol</h3></a></li>
+            <li><a class="chaptertopic" href="capacitor.html"><h3>Capacitor</h3></a></li>   
+            <li><a class="chaptertopic" href="magnetism.html"><h3>Magnetism</h3></a></li>  
+            <li><a class="chaptertopic" href="induction.html"><h3>Electromagnetic Induction</h3></a></li>   
+            <li><a class="chaptertopic" href="ac.html"><h3>Alternating Current</h3></a></li>  
+            <li><a class="chaptertopic" href="emwaves.html"><h3>Electromagnetic Waves</h3></a></li>  
+        </ol>
+                    </div>
+                </li>
+                <li class="card" id="card3">
+                    <div class="card-body">
+                        <h2 class="secheading">Waves and Thermodynamics</h2>
+        <ol class="chapterhead" type="1">
+        <li><a class="chaptertopic" href="hest.html"><h3>Heat and Temperature</h3></a></li>
+        <li><a class="chaptertopic" href="ktg.html"><h3>Kinetic Theory Of Gases</h3></a></li>
+        <li><a class="chaptertopic" href="calorimetry.html"><h3>Calorimetry</h3></a></li>
+        <li><a class="chaptertopic" href="lawsofthermo.html"><h3>Laws of Thernodynamics</h3></a></li>
+        <li><a class="chaptertopic" href="ht.html"><h3>Heat Transfer</h3></a></li>
+        <li><a class="chaptertopic" href="waves.html"><h3>Waves</h3></a></li>  
+        </ol>
+                    </div>
+                </li>
+                <li class="card" id="card4">
+                    <div class="card-body">
+                        <h2 class="secheading">Optics and Modern Physics</h2>
+                        <ol class="chapterhead" type="1">
+                            <li><a class="chaptertopic" href="photoeffect.html"><h3>Photoelectric Effect</h3></a></li>
+                            <li><a class="chaptertopic" href="xray.html"><h3>X-Rays</h3></a></li>
+                            <li><a class="chaptertopic" href="semiconductors.html"><h3>Semiconductors</h3></a></li>
+                            <li><a class="chaptertopic" href="nuc.html"><h3>The Nucleus</h3></a></li>
+                            <li><a class="chaptertopic" href="optics.html"><h3>Optics</h3></a></li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        
+       
+
+
+</body>
+</html>
